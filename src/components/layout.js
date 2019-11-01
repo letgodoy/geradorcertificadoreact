@@ -25,7 +25,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.site.siteMetadata.title}>
+      <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+      </Header>
       <div
         style={{
           margin: `0 auto`,
@@ -36,9 +38,9 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()}, Built by
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://letgodoy.com">LetGodoy</a>
         </footer>
       </div>
     </>
